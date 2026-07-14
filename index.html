@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Блог</title>
+    <title>My Personal Blog</title>
     <style>
-        body { font-family: sans-serif; padding: 40px 20px; background: #ffffff; color: #333333; text-align: center; }
-        .btn { display: inline-block; background: #000000; color: #ffffff; padding: 15px 30px; margin-top: 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, sans-serif; padding: 40px 20px; background: #ffffff; color: #111111; text-align: center; }
+        h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+        p { color: #666666; font-size: 16px; line-height: 1.5; }
+        
+        /* СТИЛИ ЧЕРНОЙ КНОПКИ */
+        .btn { 
+            display: inline-block; 
+            background: #000000; /* Цвет кнопки (черный) */
+            color: #ffffff; /* Цвет текста на кнопке (белый) */
+            padding: 16px 40px; 
+            margin-top: 40px; 
+            text-decoration: none; 
+            border-radius: 8px; /* Скругление углов (минимальное) */
+            font-weight: 600; 
+            font-size: 16px; 
+            letter-spacing: 0.5px;
+            transition: all 0.2s; 
+        }
+        .btn:active { transform: scale(0.97); opacity: 0.8; }
     </style>
 </head>
 <body>
-
-    <h1>Заметки о фотографии и лайфстайле</h1>
-    <p>Добро пожаловать в мой личный блог. Здесь я делюсь мыслями об искусстве мобильной фотографии и поиске вдохновения в повседневных вещах.</p>
+    <h1>Lifestyle & Travel Notes</h1>
+    <p>Welcome to my personal space. Here I share my thoughts, mobile photography tips, behind-the-scenes moments, and inspiration from my everyday life.</p>
+    <p style="margin-top: 50px; color: #444;">Please verify your age to enter the gallery:</p>
     
-    <p style="margin-top: 40px; color: #666;">Для перехода к публикациям подтвердите возраст:</p>
-    
-    <!-- ПРЯМАЯ КНОПКА, НА КОТОРУЮ НАЖМЕТ ЧЕЛОВЕК -->
-    <a href="https://sites.google.com/view/glowandwibes--/" class="btn">Мне уже есть 18 лет ➔</a>
-
+    <a href="https://sites.google.com/view/glowandwibes--/" class="btn">I AM 18 OR OLDER ➔</a>
 </body>
 </html>
