@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Blog</title>
     <style>
-        body { font-family: "Georgia", serif; padding: 40px 20px; background: #ffffff; color: #222222; text-align: center; }
-        h1 { font-size: 28px; font-weight: normal; font-style: italic; }
-        p { color: #777777; font-size: 15px; line-height: 1.6; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, sans-serif; padding: 40px 20px; background: #ffffff; color: #111111; text-align: center; }
+        h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+        p { color: #666666; font-size: 16px; line-height: 1.5; }
         
-        /* СТИЛИ ПРОЗРАЧНОЙ КНОПКИ С РАМКОЙ */
+        /* СТИЛИ СТРОГОЙ ЧЕРНОЙ КНОПКИ */
         .btn { 
             display: inline-block; 
-            background: transparent; /* Прозрачный фон */
-            color: #000000; /* Черный цвет текста */
-            border: 2px solid #000000; /* Черная рамка толщиной 2 пикселя */
-            padding: 15px 45px; 
+            background: #000000; 
+            color: #ffffff; 
+            padding: 16px 40px; 
             margin-top: 40px; 
             text-decoration: none; 
-            border-radius: 0px; /* Полностью острые углы */
-            font-family: sans-serif;
-            font-weight: 500; 
-            font-size: 15px; 
-            letter-spacing: 2px; /* Расстояние между буквами */
+            border-radius: 8px; 
+            font-weight: 600; 
+            font-size: 16px; 
+            letter-spacing: 0.5px;
             transition: all 0.2s; 
         }
-        .btn:active { background: #000000; color: #ffffff; } /* При нажатии кнопка окрасится в черный */
+        .btn:active { transform: scale(0.97); opacity: 0.8; }
     </style>
 </head>
 <body>
@@ -33,6 +31,7 @@
     <p>Welcome to my personal space. Here I share my thoughts, mobile photography tips, behind-the-scenes moments, and inspiration from my everyday life.</p>
     <p style="margin-top: 50px; color: #444;">Please verify your age to enter the gallery:</p>
     
-    <a href="https://sites.google.com/view/glowandwibes--/" class="btn">ENTER 18+</a>
+    <!-- ЧЕРНАЯ КНОПКА С БЕЗОПАСНЫМ ТЕКСТОМ -->
+    <a href="https://sites.google.com/view/glowandwibes--/" class="btn">I am 18 or older ➔</a>
 </body>
 </html>
